@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Form</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>STUDENT FORM</h1>
+  <div class="container">
+    <form>
+      <table border="1" class="form">
+        <tr>
+          <td>Name</td>
+          <td><input type="text" placeholder="Enter the Name" id="name"> </td>
+        </tr>
+
+
+        <tr>
+          <td>Age</td>
+          <td><input type="number" placeholder="Enter the Age" id="age"></td>
+        </tr>
+
+        <tr>
+          <td> <label>Gender</label> </td>
+
+          <td> <input type="radio" value="male" name="gender">
+            <label>Male</label>
+            <input type="radio" value="female" name="gender">
+            <label>Female</label>
+          </td>
+
+        </tr>
+
+
+        <tr>
+          <td>Course</td>
+          <td><select id="course">
+              <option>
+                Python
+              </option>
+              <option>
+                JavaScript
+              </option>
+              <option>
+                Java
+              </option>
+              <option>
+                React
+              </option>
+            </select></td>
+        </tr>
+
+        <tr>
+          <td>E-mail</td>
+          <td><input type="email" placeholder="Enter Email-ID" id="email"> </td>
+        </tr>
+
+        <tr>
+          <td colspan="2" id="btn"> Save</td>
+
+        </tr>
+      </table>
+    </form>
+  </div>
+  <div>
+    <table border="1" class="studenttable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Course</th>
+          <th>Gender</th>
+          <th>E-mail</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+
+      </tbody>
+
+    </table>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
